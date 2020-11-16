@@ -12,7 +12,12 @@ var prova = new Vue({
   },
   methods:{
     myFunction: function(){
-      this.filtro = "classeFiltro";
+      if (this.filtro === "") {
+        this.filtro = "classeFiltro";
+      }else{
+        this.filtro = "";
+      }
+
     }
   }
 
